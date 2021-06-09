@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.blooddonorapp">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/WelcomeScreenTheme">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme" />
+
+       <activity
+           android:name=".MainActivity"
+           android:theme="@style/AppTheme"/>
+
+
+
+        <activity
+            android:name=".ImageUpdateActivity"
+            android:theme="@style/AppTheme" />
+
+
+
+        <activity
+            android:name=".ImageUploadActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:theme="@style/AppTheme"/>
+
+
+    </application>
+</manifest>
